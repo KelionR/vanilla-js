@@ -1,7 +1,15 @@
 class Contador {
-  // Inserte el código aquí
+
+  constructor() {
+    this.valor = 0;
+  }
+
+
+  siguiente() {
+    this.valor += 1;
+  }
 }
 
-// Inserte el código aquí
+export const instancia = new Contador();
 
-export { instancia }
+return console.log(instancia.valor);
